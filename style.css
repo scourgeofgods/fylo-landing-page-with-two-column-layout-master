@@ -322,12 +322,19 @@ img {
   gap: 3rem;
 }
 .social__links--item {
+  position: relative;
   border: 1px solid var(--clr-white);
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   text-align: center;
   transition: all 0.45s ease;
+}
+.social__links--item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .social__links--item:hover {
   background-color: var(--clr-white);
